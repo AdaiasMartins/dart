@@ -1,7 +1,7 @@
 import 'dart:io';
 
 void main(){
-  //variáveis e tipos 
+    //1 -variáveis e tipos 
   String variavelNome = "Adaias";
   print(variavelNome);
 
@@ -14,7 +14,7 @@ void main(){
   List<String> listaDePalavras = ["Adaias", "Martins"];
   print('${listaDePalavras[0]}, ${listaDePalavras[1]}');
 
-  //null-safety
+  //2 - null-safety
   //a interrogação é usada para falar que uma variável pode ser nula
   String? nome;
   print(nome);
@@ -23,7 +23,7 @@ void main(){
   String nomeNaoNulo;
   //print(nomeNaoNulo!);
 
-  //estruturas de fluxo
+  //3 - estruturas de fluxo
   bool seguirEmFrente = false;
   if(seguirEmFrente){
     print("Andar");
@@ -45,7 +45,18 @@ void main(){
     default:
       print("padrão");
       break;
-      
+    }
+    
+  // 4 - Estruturas de repetição
+
+  for(int i = 1; i <= 10; i++){
+    print(i * 2);
+  };
+
+  int contador = 1;
+  while(contador != 1){
+    contador = contador - 1;
+    print('Loop -> $contador');
   }
 
 }
