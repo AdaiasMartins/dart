@@ -1,7 +1,9 @@
 import 'dart:io';
 
+import 'celular.dart';
+
 void main(){
-    //1 -variáveis e tipos 
+  //1 -variáveis e tipos 
   String variavelNome = "Adaias";
   print(variavelNome);
 
@@ -58,5 +60,8 @@ void main(){
     contador = contador - 1;
     print('Loop -> $contador');
   }
+
+  // Classes e Métodos
+  Celular celularTeste = Celular("Azul", 8 , 1440.53);
 
 }
